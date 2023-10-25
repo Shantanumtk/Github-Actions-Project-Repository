@@ -22,3 +22,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
+
+      - name: Run Bash Script from Repo
+        run: |
+            # Change directory to the location of your script in the repository
+            pwd
+            cd $pwd
+            # Run your Bash script
+            sh -x Hello_World.sh
