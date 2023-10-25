@@ -26,7 +26,6 @@ jobs:
       - name: Run Bash Script from Repo
         run: |
             # Change directory to the location of your script in the repository
-            pwd
-            cd $pwd
+            cd /home/runner/work/Github-Actions-Project-Repository/Github-Actions-Project-Repository
             # Run your Bash script
             sh -x Hello_World.sh
